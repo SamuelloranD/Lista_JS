@@ -1,15 +1,15 @@
 function calculadora(n1, n2, operacao) {
     if (operacao === 'soma') {
-        return n1 + n2;
+        return `Soma: ${n1 + n2}`;
     } else if (operacao === 'subtracao') {
-        return n1 - n2;
+        return `Subtração: ${n1 - n2}`;
     } else if (operacao === 'multiplicacao') {
-        return n1 * n2;
+        return `Multiplicação: ${n1 * n2}`;
     } else if (operacao === 'divisao') {
         if (n2 === 0) {
             return 'Erro: divisão por zero';
         }
-        return n1 / n2;
+        return `Divisão: ${n1 / n2}`;
     } else {
         return 'Operação inválida';
     }
